@@ -10,9 +10,22 @@
 		6C8796822D201F4300EFE467 /* sopt-swiftui-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sopt-swiftui-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6C8796952D21A27100EFE467 /* Exceptions for "sopt-swiftui-study" folder in "sopt-swiftui-study" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6C8796812D201F4300EFE467 /* sopt-swiftui-study */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6C8796842D201F4300EFE467 /* sopt-swiftui-study */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6C8796952D21A27100EFE467 /* Exceptions for "sopt-swiftui-study" folder in "sopt-swiftui-study" target */,
+			);
 			path = "sopt-swiftui-study";
 			sourceTree = "<group>";
 		};
@@ -257,6 +270,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"sopt-swiftui-study/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sopt-swiftui-study/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,6 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"sopt-swiftui-study/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sopt-swiftui-study/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
