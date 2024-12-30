@@ -7,11 +7,29 @@
 
 import SwiftUI
 
+import KakaoSDKCommon
+import KakaoSDKAuth
+
 @main
 struct sopt_swiftui_studyApp: App {
+    
+    @UIApplicationDelegateAdaptor var appDelegate : MyAppDelegate
+    
+    init() {
+        let kakaoAppKey = Bundle.main.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") ?? ""
+        
+        // Kakao SDK 초기화
+        KakaoSDK.initSDK(appKey: kakaoAppKey as! String)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // onOpenURL()을 사용해 커스텀 URL 스킴 처리
+            ContentView().onOpenURL(perform: { url in
+                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                    AuthController.handleOpenUrl(url: url)
+                }
+            })
         }
     }
 }
