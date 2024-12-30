@@ -27,7 +27,7 @@ struct sopt_swiftui_studyApp: App {
     var body: some Scene {
         WindowGroup {
             // onOpenURL()을 사용해 커스텀 URL 스킴 처리
-            ContentView().onOpenURL(perform: { url in
+            KakaoLoginView().onOpenURL(perform: { url in
                 if (AuthApi.isKakaoTalkLoginUrl(url)) {
                     AuthController.handleOpenUrl(url: url)
                 }
