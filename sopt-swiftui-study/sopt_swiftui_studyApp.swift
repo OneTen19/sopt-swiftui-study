@@ -18,6 +18,8 @@ struct sopt_swiftui_studyApp: App {
     init() {
         let kakaoAppKey = Bundle.main.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") ?? ""
         
+        print("kakaoAppKey : \(kakaoAppKey)")
+        
         // Kakao SDK 초기화
         KakaoSDK.initSDK(appKey: kakaoAppKey as! String)
     }

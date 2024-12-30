@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+        VStack(spacing: 20) {
             Text("Hello, world!")
+            
+            Button("카카오 로그인") {
+                
+            }
+            
+            Button("카카오 로그아웃"){
+                
+            }
+            
         }
         .padding()
     }
