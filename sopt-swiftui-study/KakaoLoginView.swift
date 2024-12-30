@@ -15,11 +15,11 @@ struct KakaoLoginView: View {
             Text("Hello, world!")
             
             Button("카카오 로그인") {
-                viewModel.handleKakaoLogin()
+                viewModel.kakaoLogin()
             }
             
             Button("카카오 로그아웃"){
-                
+                viewModel.kakaoLogout()
             }
             
         }
