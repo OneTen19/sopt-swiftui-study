@@ -12,7 +12,6 @@ import KakaoSDKAuth
 
 @main
 struct sopt_swiftui_studyApp: App {
-    
     @UIApplicationDelegateAdaptor var appDelegate : MyAppDelegate
     
     init() {

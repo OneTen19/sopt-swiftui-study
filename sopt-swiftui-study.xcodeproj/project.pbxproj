@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C7870242D266B0A0095ED3C /* PhotosPickerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7870232D266B0A0095ED3C /* PhotosPickerExampleView.swift */; };
 		6C87969C2D22B6E700EFE467 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6C87969B2D22B6E700EFE467 /* KakaoSDK */; };
 		6C87969E2D22B6E700EFE467 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6C87969D2D22B6E700EFE467 /* KakaoSDKAuth */; };
 		6C8796A02D22B6E700EFE467 /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = 6C87969F2D22B6E700EFE467 /* KakaoSDKCert */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C7870232D266B0A0095ED3C /* PhotosPickerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerExampleView.swift; sourceTree = "<group>"; };
 		6C8796822D201F4300EFE467 /* sopt-swiftui-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sopt-swiftui-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8796B32D22CA4100EFE467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C8796B52D22CA4100EFE467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				6C8796BA2D22CA4100EFE467 /* sopt_swiftui_studyApp.swift */,
 				6C8796B82D22CA4100EFE467 /* KakaoLoginView.swift */,
 				6C8796C32D22CA5B00EFE467 /* KakaoLoginViewModel.swift */,
+				6C7870232D266B0A0095ED3C /* PhotosPickerExampleView.swift */,
 			);
 			path = "sopt-swiftui-study";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7870242D266B0A0095ED3C /* PhotosPickerExampleView.swift in Sources */,
 				6C8796C42D22CA5B00EFE467 /* KakaoLoginViewModel.swift in Sources */,
 				6C8796C02D22CA4100EFE467 /* KakaoLoginView.swift in Sources */,
 				6C8796C12D22CA4100EFE467 /* MyAppDelegate.swift in Sources */,
@@ -328,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sopt-swiftui-study/Preview Content\"";
@@ -358,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sopt-swiftui-study/Preview Content\"";

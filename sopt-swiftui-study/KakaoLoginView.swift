@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AuthenticationServices
+
 struct KakaoLoginView: View {
     @StateObject var viewModel = KakaoLoginViewModel()
     
@@ -15,19 +17,28 @@ struct KakaoLoginView: View {
     }
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text(loginStateInfo(viewModel.isLoggedIn))
-            
-            Button("카카오 로그인") {
-                viewModel.handleKakaoLogin()
+        NavigationStack{
+            VStack(spacing: 20) {
+                Text(loginStateInfo(viewModel.isLoggedIn))
+                
+                Button("카카오 로그인") {
+                    viewModel.handleKakaoLogin()
+                }
+                
+                Button("카카오 로그아웃"){
+                    viewModel.kakaoLogout()
+                }
+                
+                NavigationLink {
+                    PhotosPickerExampleView()
+                } label: {
+                    Text("사진 선택 뷰")
+                }
+
+                
             }
-            
-            Button("카카오 로그아웃"){
-                viewModel.kakaoLogout()
-            }
-            
+            .padding()
         }
-        .padding()
     }
 }
 
